@@ -4,7 +4,7 @@
 A powerful CLI to create .d.ts files for .rbxmx files
 
 <a href="https://github.com/sasial-dev/rbxmx-to-ts/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/sasial-dev/rbxmx-to-ts"></a>
-<img alt="npm" src="https://img.shields.io/npm/v/@rbxts/rbxmx-to-ts">
+<img alt="npm" src="https://img.shields.io/npm/v/rbxmx-to-ts">
 <img alt="David" src="https://img.shields.io/david/sasial-dev/rbxmx-to-ts">
 <img alt="David" src="https://img.shields.io/david/dev/sasial-dev/rbxmx-to-ts">
 </div>
@@ -20,7 +20,7 @@ You must have [node](https://nodejs.org/) installed if you are installing throug
 Use [npm](https://npmjs.com/) to install rbxmx-to-ts.
 
 ```bash
-npm install @rbxts/rbxmx-to-ts --global
+npm install rbxmx-to-ts --global
 ```
 
 ### Other Installation

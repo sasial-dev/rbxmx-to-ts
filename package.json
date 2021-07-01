@@ -1,5 +1,5 @@
 {
-  "name": "@rbxts/rbxmx-to-ts",
+  "name": "rbxmx-to-ts",
   "version": "1.0.0",
   "description": "A powerful CLI to create .d.ts files for .rbxmx files",
   "main": "out/index.js",
