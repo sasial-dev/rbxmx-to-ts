@@ -1,0 +1,32 @@
+{
+  "name": "@rbxts/rbxmx-to-ts",
+  "version": "1.0.0",
+  "description": "A powerful CLI to create .d.ts files for .rbxmx files",
+  "main": "out/index.js",
+  "bin": {
+    "rbxmxc": "out/index.js"
+  },
+  "engines": {
+    "node": ">=12 <13 || >=14 <15 || >=16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "pkg -o rbxmxc -t node14-win-x64,node14-macos-x64,node14-linux-x64 out/index.js"
+  },
+  "author": "sasial-dev",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "chokidar": "^3.5.2",
+    "commander": "^8.0.0",
+    "glob": "^7.1.7",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.9",
+    "@types/glob": "^7.1.3",
+    "@types/xml2js": "^0.4.8",
+    "pkg": "^5.3.0",
+    "typescript": "^4.3.4"
+  }
+}
