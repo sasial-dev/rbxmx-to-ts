@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { parseString } from "xml2js";
 import { program } from "commander";
 import { watch } from "chokidar";
