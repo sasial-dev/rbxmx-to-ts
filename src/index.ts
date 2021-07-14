@@ -92,7 +92,7 @@ function generateSubInterface(results: string[], item: any, depth: number) {
 }
 
 function generateInterface(item: any) {
-	const results: string[] = [`type ${getName(item)} = ${getClass(item)} &`, " {\n"];
+	const results: string[] = [`export type ${getName(item)} = ${getClass(item)} &`, " {\n"];
 	for (let i = 0; i < item.Item.length; i++) generateSubInterface(results, item.Item[i], 2)
 	results.push("}\n");
 	return results.join("")
