@@ -7,6 +7,7 @@ import fs from "fs";
 import { sync } from 'glob'
 import path from "path"
 import chalk from "chalk";
+import { jsonc } from "jsonc";
 
 const glob = sync
 
@@ -126,7 +127,7 @@ let filesGlob = process.cwd() + "/**/*.rbxmx"
 
 if (fs.existsSync(path.join(process.cwd(), "tsconfig.json"))) {
 	const _tsConfig = fs.readFileSync(`${path.join(process.cwd(), "tsconfig.json")}`, { encoding: "utf-8"})
-	const tsConfig = JSON.parse(_tsConfig)
+	const tsConfig = jsonc.parse(_tsConfig)
 	if (tsConfig.compilerOptions.rootDir) {
 		filesGlob = process.cwd() + `/${tsConfig.compilerOptions.rootDir}/**/*.rbxmx`
 	}

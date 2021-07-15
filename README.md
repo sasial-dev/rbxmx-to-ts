@@ -43,6 +43,14 @@ Options:
   -h, --help            display help for command
 ```
 
+## Gotchas
+The typescript compiler is not as picky with the TSConfig.json as a normal JSON file. This means that you may get errors like
+```
+Unexpected token } in JSON at position 660 while parsing near '...: {                                                                   },
+        }               ]       }}'
+```
+when rbxmx-to-ts is trying to read a TSConfig file. Please make sure that it is proper JSON - for example removing commas on the last entry. We suggest using a JSON Validator if you cannot trace the error.
+
 ## Contributing
 We love contributions! Pull requests are warmly welcomed and highly appriciated. For major changes, please open an issue first or discuss on the discord to let us know what you would like to change.
 

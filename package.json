@@ -1,6 +1,6 @@
 {
   "name": "rbxmx-to-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A powerful CLI to create .d.ts files for .rbxmx files",
   "main": "out/index.js",
   "bin": {
@@ -22,6 +22,7 @@
     "chokidar": "^3.5.2",
     "commander": "^8.0.0",
     "glob": "^7.1.7",
+    "jsonc": "2.0.0",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
