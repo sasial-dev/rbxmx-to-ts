@@ -122,8 +122,18 @@ const options = program.opts();
 
 let files: string[] = []
 
+let filesGlob = process.cwd() + "/**/*.rbxmx"
+
+if (fs.existsSync(path.join(process.cwd(), "tsconfig.json"))) {
+	const _tsConfig = fs.readFileSync(`${path.join(process.cwd(), "tsconfig.json")}`, { encoding: "utf-8"})
+	const tsConfig = JSON.parse(_tsConfig)
+	if (tsConfig.compilerOptions.rootDir) {
+		filesGlob = process.cwd() + `/${tsConfig.compilerOptions.rootDir}/**/*.rbxmx`
+	}
+}
+
 if (options.file === undefined) {
-	files = glob(process.cwd() + "/**/*.rbxmx")
+	files = glob(filesGlob)
 } else {
 	for (let i = 0; i < options.file.length; i++) {
 		if (options.file[i].indexOf(".rbxmx") >= 0) {
@@ -139,7 +149,7 @@ if (files[0] == undefined && options.file === undefined) {
 }
 
 if (options.watch && options.file === undefined) {
-	const watcher = watch(process.cwd() + "/**/*.rbxmx")
+	const watcher = watch(filesGlob)
 	watcher
 		.on('add', parseFile)
 		.on('change', parseFile)
