@@ -753,10 +753,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
-pkg-fetch@3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/pkg-fetch/-/pkg-fetch-3.2.2.tgz#33f391eb176c1844e93189a32f2279b36a1ec949"
-  integrity sha512-bLhFNT4cNnONxzbHo1H2mCCKuQkCR4dgQtv0gUZnWtp8TDP0v0UAXKHG7DXhAoTC5IYP3slLsFJtIda9ksny8g==
+pkg-fetch@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/pkg-fetch/-/pkg-fetch-3.2.3.tgz#9825febf4eadd470c126d3f6bdc2cb6996861d36"
+  integrity sha512-bv9vYANgAZ2Lvxn5Dsq7E0rLqzcqYkV4gnwe2f7oHV9N4SVMfDOIjjFCRuuTltop5EmsOcu7XkQpB5A/pIgC1g==
   dependencies:
     chalk "^4.1.0"
     fs-extra "^9.1.0"
@@ -766,10 +766,10 @@ pkg-fetch@3.2.2:
     semver "^7.3.5"
     yargs "^16.2.0"
 
-pkg@5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/pkg/-/pkg-5.3.1.tgz#8f81671613b9e5bb1d83c39b2eed4799e1e679fe"
-  integrity sha512-jT/sptM1ZG++FNk+jnJYNoWLDQXYd7hqpnBhd5j18SNW1jJzNYo55RahuCiD0KN0PX9mb53GWCqKM0ia/mJytA==
+pkg@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/pkg/-/pkg-5.3.2.tgz#f86520a83579f38f54684f4f873433b09af65dcb"
+  integrity sha512-78X8Tt71TI11XjkZm/r9shTdFRooFiiRcT8nfYeeOou5VKCkCysQauwAAkJKb5yjfrUhk3CBNL4zv22/iLpdnw==
   dependencies:
     "@babel/parser" "7.13.13"
     "@babel/types" "7.13.12"
@@ -780,7 +780,7 @@ pkg@5.3.1:
     into-stream "^6.0.0"
     minimist "^1.2.5"
     multistream "^4.1.0"
-    pkg-fetch "3.2.2"
+    pkg-fetch "3.2.3"
     prebuild-install "6.0.1"
     progress "^2.0.3"
     resolve "^1.20.0"
@@ -1029,10 +1029,10 @@ strip-ansi@^6.0.0:
   dependencies:
     ansi-regex "^5.0.0"
 
-strip-json-comments@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-4.0.0.tgz#6fd3a79f1b956905483769b0bf66598b8f87da50"
-  integrity sha512-LzWcbfMbAsEDTRmhjWIioe8GcDRl0fa35YMXFoJKDdiD/quGFmjJjdgPjFJJNwCMaLyQqFIDqCdHD2V4HfLgYA==
+strip-json-comments@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
+  integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
