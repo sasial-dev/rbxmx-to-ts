@@ -1,9 +1,8 @@
 {
   "name": "rbxmx-to-ts",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A powerful CLI to create .d.ts files for .rbxmx files",
   "main": "out/index.js",
-  "type": "module",
   "bin": {
     "rbxmxc": "out/index.js"
   },
